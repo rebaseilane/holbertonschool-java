@@ -1,5 +1,10 @@
+import java.util.Locale;
+
 public class Program {
         public static void main(String[] args) {
+
+		Locale.setDefault(Locale.FRANCE);
+
             try {
                 BasicBankAccount account1 = new BasicBankAccount("AAA", 50.0);
                 System.out.printf("Account %s - balance: %.2f\n", account1.getAccountNumber(), account1.getBalance());

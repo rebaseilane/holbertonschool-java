@@ -1,9 +1,5 @@
-import java.util.Locale;
-
 public class Program {
     public static void main(String[] args) {
-
-	    Locale.setDefault(Locale.FRANCE);
 
         try {
             Book book1 = new Book(
@@ -29,15 +25,14 @@ public class Program {
                     goldEditionBook1.getTitle(),
                     goldEditionBook1.getAuthor(),
                     goldEditionBook1.getPrice());
-
         } catch (Exception ex) {
             System.out.println(ex.getMessage() + "\n");
         }
 
         try {
             GoldEditionBook goldEditionBook2 = new GoldEditionBook(
-                    "Alice's Adventures in Wonderland",
-                    "Lewis Carroll",
+                    "Alice",
+                    "Lewis",
                     21.88);
 
             System.out.printf("Title: %s - Author: %s - Price: %.2f\n",
@@ -50,7 +45,7 @@ public class Program {
 
         try {
             Book book2 = new Book(
-                    "Dracula",
+                    "Dr",
                     "Bram Stoker",
                     15.99);
 

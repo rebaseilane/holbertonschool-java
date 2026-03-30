@@ -1,8 +1,7 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class VideoProcessor {
-    private List<NotificationChannel> channels;
+    private ArrayList<NotificationChannel> channels;
 
     public VideoProcessor() {
         channels = new ArrayList<>();

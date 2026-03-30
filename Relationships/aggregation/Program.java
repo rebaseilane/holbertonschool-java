@@ -14,6 +14,6 @@ public class Program {
 
         employee.introduce();
 
-        System.out.println();
+
     }
 }

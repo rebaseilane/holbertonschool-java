@@ -33,6 +33,12 @@ public class Character {
     @Override
     public String toString() {
         Mood mood = getCurrentMood();
-        return happinessPoints + " - " + mood.getClass().getSimpleName();
+        String moodName = mood.getClass().getSimpleName();
+
+if (moodName.equals("VeryHappy")) {
+    moodName = "Very Happy";
+}
+
+return happinessPoints + " - " + moodName;
     }
 }

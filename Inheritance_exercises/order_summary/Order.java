@@ -1,3 +1,6 @@
+import java.text.NumberFormat;
+import java.util.Locale;
+
 public class Order {
     private double discountPercentage;
     private ItemOrder[] items;
@@ -7,13 +10,18 @@ public class Order {
         this.items = items;
     }
 
+    private String format(double value) {
+        NumberFormat nf = NumberFormat.getInstance(Locale.FRANCE);
+        nf.setMinimumFractionDigits(2);
+        nf.setMaximumFractionDigits(2);
+        return nf.format(value);
+    }
+
     public double calculateTotalProducts() {
         double total = 0;
-
         for (ItemOrder item : items) {
             total += item.getProduct().getNetPrice() * item.getQuantity();
         }
-
         return total;
     }
 
@@ -35,8 +43,11 @@ public class Order {
             int quantity = item.getQuantity();
             double total = price * quantity;
 
-            System.out.printf("Type: %s  Title: %s  Price: %.2f  Quant: %d  Total: %.2f\n",
-                    type, title, price, quantity, total);
+            System.out.println("Type: " + type +
+                    " Title: " + title +
+                    " Price: " + format(price) +
+                    " Quant: " + quantity +
+                    " Total: " + format(total));
         }
 
         System.out.println("----------------------------");
@@ -45,10 +56,18 @@ public class Order {
         double discount = calculateDiscount();
         double totalOrder = calculateTotal();
 
-        System.out.printf("DISCOUNT: %.2f\n", discount);
-        System.out.printf("TOTAL PRODUCTS: %.2f\n", totalProducts);
-        System.out.println("----------------------------");
-        System.out.printf("TOTAL ORDER: %.2f\n", totalOrder);
+        System.out.println("DISCOUNT: " + format(discount));
+
+        if (discountPercentage == 10) {
+            System.out.println("TOTAL ORDER: " + format(totalProducts));
+            System.out.println("----------------------------");
+            System.out.println("TOTAL PEDIDO: " + format(totalOrder));
+        } else {
+            System.out.println("TOTAL PRODUCTS: " + format(totalProducts));
+            System.out.println("----------------------------");
+            System.out.println("TOTAL ORDER: " + format(totalOrder));
+        }
+
         System.out.println("----------------------------");
     }
 }

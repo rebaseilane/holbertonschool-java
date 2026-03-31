@@ -8,7 +8,10 @@ public class PeopleQuery {
                 .collect(Collectors.groupingBy(
                         Person::getPosition,
                         () -> new TreeMap<>(Comparator.reverseOrder()),
-                        Collectors.toCollection(TreeSet::new)
+                        Collectors.toCollection(() -> new TreeSet<>(
+                                Comparator.comparingInt(Person::getAge).reversed()
+                                          .thenComparing(Comparator.comparingInt(Person::getCode).reversed())
+                        ))
                 ));
     }
 }

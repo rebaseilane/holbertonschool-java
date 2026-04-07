@@ -1,0 +1,14 @@
+u[
+{"id":1,"name":"Betty","email":"betty@techcamps.com","phone":12345678},
+{"id":2,"name":"John","email":"john@mail.com","phone":11111111},
+{"id":3,"name":"Alice","email":"alice@mail.com","phone":22222222},
+{"id":4,"name":"Bob","email":"bob@mail.com","phone":33333333},
+{"id":5,"name":"Eve","email":"eve@mail.com","phone":44444444},
+{"id":6,"name":"Mike","email":"mike@mail.com","phone":55555555},
+{"id":7,"name":"Chris","email":"chris@mail.com","phone":66666666},
+{"id":8,"name":"Anna","email":"anna@mail.com","phone":77777777},
+{"id":9,"name":"David","email":"david@mail.com","phone":88888888},
+{"id":10,"name":"Sophia","email":"sophia@mail.com","phone":99999999},
+{"id":11,"name":"Daniel","email":"daniel@mail.com","phone":10101010},
+{"id":12,"name":"Emma","email":"emma@mail.com","phone":12121212}
+]

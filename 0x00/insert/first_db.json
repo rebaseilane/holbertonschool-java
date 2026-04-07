@@ -1,0 +1,8 @@
+[
+{"id":1,"name":"Betty","email":"betty@techcamps.com","phone":12345678},
+{"id":2,"name":"John","email":"john@mail.com","phone":11111111},
+{"id":3,"name":"Alice","email":"alice@mail.com","phone":22222222},
+{"id":4,"name":"Bob","email":"bob@mail.com","phone":33333333},
+{"id":5,"name":"Eve","email":"eve@mail.com","phone":44444444},
+{"id":6,"name":"Mike","email":"mike@mail.com","phone":55555555}
+]

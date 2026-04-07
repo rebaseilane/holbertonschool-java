@@ -1,0 +1,5 @@
+demo/AdminApp.class
+models/PersonModel.class
+entities/Person.class
+entities/Product.class
+models/ProductModel.class

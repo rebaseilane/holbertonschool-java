@@ -1,0 +1,9 @@
+/root/holbertonschool-java/java_jpa_hibernate_mapping/course-management-api/src/main/java/entities/CourseMaterial.java
+/root/holbertonschool-java/java_jpa_hibernate_mapping/course-management-api/src/main/java/entities/Student.java
+/root/holbertonschool-java/java_jpa_hibernate_mapping/course-management-api/src/main/java/models/CourseModel.java
+/root/holbertonschool-java/java_jpa_hibernate_mapping/course-management-api/src/main/java/models/StudentModel.java
+/root/holbertonschool-java/java_jpa_hibernate_mapping/course-management-api/src/main/java/entities/Course.java
+/root/holbertonschool-java/java_jpa_hibernate_mapping/course-management-api/src/main/java/demo/CourseManagementMain.java
+/root/holbertonschool-java/java_jpa_hibernate_mapping/course-management-api/src/main/java/entities/Address.java
+/root/holbertonschool-java/java_jpa_hibernate_mapping/course-management-api/src/main/java/entities/Phone.java
+/root/holbertonschool-java/java_jpa_hibernate_mapping/course-management-api/src/main/java/entities/Teacher.java

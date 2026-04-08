@@ -1,0 +1,9 @@
+entities/Student.class
+models/StudentModel.class
+entities/CourseMaterial.class
+entities/Phone.class
+models/CourseModel.class
+entities/Address.class
+demo/CourseManagementMain.class
+entities/Teacher.class
+entities/Course.class

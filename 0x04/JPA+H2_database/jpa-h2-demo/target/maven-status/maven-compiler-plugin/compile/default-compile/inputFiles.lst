@@ -1,0 +1,8 @@
+/root/holbertonschool-java/0x04/JPA+H2_database/jpa-h2-demo/src/main/java/com/example/jpah2demo/controller/CustomerController.java
+/root/holbertonschool-java/0x04/JPA+H2_database/jpa-h2-demo/src/main/java/com/example/jpah2demo/entity/Customer.java
+/root/holbertonschool-java/0x04/JPA+H2_database/jpa-h2-demo/src/main/java/com/example/jpah2demo/entity/Address.java
+/root/holbertonschool-java/0x04/JPA+H2_database/jpa-h2-demo/src/main/java/com/example/jpah2demo/repository/CustomerRepository.java
+/root/holbertonschool-java/0x04/JPA+H2_database/jpa-h2-demo/src/main/java/com/example/jpah2demo/entity/Phone.java
+/root/holbertonschool-java/0x04/JPA+H2_database/jpa-h2-demo/src/main/java/com/example/jpah2demo/repository/AddressRepository.java
+/root/holbertonschool-java/0x04/JPA+H2_database/jpa-h2-demo/src/main/java/com/example/jpah2demo/JpaH2DemoApplication.java
+/root/holbertonschool-java/0x04/JPA+H2_database/jpa-h2-demo/src/main/java/com/example/jpah2demo/repository/PhoneRepository.java

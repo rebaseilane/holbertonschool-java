@@ -1,0 +1,8 @@
+com/example/jpah2demo/entity/Customer.class
+com/example/jpah2demo/entity/Address.class
+com/example/jpah2demo/controller/CustomerController.class
+com/example/jpah2demo/repository/CustomerRepository.class
+com/example/jpah2demo/repository/PhoneRepository.class
+com/example/jpah2demo/repository/AddressRepository.class
+com/example/jpah2demo/entity/Phone.class
+com/example/jpah2demo/JpaH2DemoApplication.class

@@ -1,0 +1,98 @@
+{
+  "info": {
+    "name": "CUSTOMERS API",
+    "_postman_id": "b7c8f3a1-1234-4a11-9abc-1234567890ab",
+    "description": "Postman collection for Spring Boot JPA + H2 Customer API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Add Customer",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@gmail.com\",\n  \"phones\": [\n    { \"number\": \"0711111111\" }\n  ],\n  \"addresses\": [\n    { \"city\": \"Johannesburg\", \"street\": \"Main Street\" }\n  ]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api-jpa-h2/addClient",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api-jpa-h2", "addClient"]
+        }
+      }
+    },
+    {
+      "name": "Find All Customers",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api-jpa-h2/findAllClients",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api-jpa-h2", "findAllClients"]
+        }
+      }
+    },
+    {
+      "name": "Find Customer By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api-jpa-h2/findClientById/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api-jpa-h2", "findClientById", "1"]
+        }
+      }
+    },
+    {
+      "name": "Update Customer",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Updated User\",\n  \"email\": \"updated@gmail.com\",\n  \"phones\": [\n    { \"number\": \"0722222222\" }\n  ],\n  \"addresses\": [\n    { \"city\": \"Cape Town\", \"street\": \"Long Street\" }\n  ]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api-jpa-h2/updateClientById/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api-jpa-h2", "updateClientById", "1"]
+        }
+      }
+    },
+    {
+      "name": "Delete Customer",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api-jpa-h2/removeClientById/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api-jpa-h2", "removeClientById", "1"]
+        }
+      }
+    }
+  ]
+}

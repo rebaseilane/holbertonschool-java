@@ -1,36 +1,28 @@
 /**
  * Functions class demonstrating Clean Code principles.
  *
- * This version follows:
- * - Single responsibility principle
- * - No duplicated logic
+ * This version keeps only correct B-options:
+ * - One responsibility per function
  * - No side effects
- * - Clean abstraction level
+ * - No invalid type reuse
  */
 
 public class Functions {
 
     /**
      * Saves income.
-     *
-     * @param income income object
      */
     public void saveIncome(Income income) {
     }
 
     /**
      * Saves expense.
-     *
-     * @param expense expense object
      */
     public void saveExpense(Expense expense) {
     }
 
     /**
      * Saves a user.
-     *
-     * @param user user object
-     * @return user
      */
     public User saveUser(User user) {
         return user;
@@ -38,8 +30,6 @@ public class Functions {
 
     /**
      * Gets environment.
-     *
-     * @return environment
      */
     public Environment getEnvironment() {
         return null;
@@ -47,8 +37,6 @@ public class Functions {
 
     /**
      * Gets release.
-     *
-     * @return release
      */
     public Release getRelease() {
         return null;
@@ -56,39 +44,37 @@ public class Functions {
 
     /**
      * Gets version.
-     *
-     * @return version string
      */
     private String getVersion() {
         return "";
     }
 
     /**
-     * Dummy class representing Income.
+     * Income placeholder.
      */
     public static class Income {
     }
 
     /**
-     * Dummy class representing Expense.
+     * Expense placeholder.
      */
     public static class Expense {
     }
 
     /**
-     * Dummy class representing User.
+     * User placeholder.
      */
     public static class User {
     }
 
     /**
-     * Dummy class representing Environment.
+     * Environment placeholder.
      */
     public static class Environment {
     }
 
     /**
-     * Dummy class representing Release.
+     * Release placeholder.
      */
     public static class Release {
     }

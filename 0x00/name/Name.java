@@ -1,13 +1,16 @@
 /**
- * Name class demonstrating clean code naming conventions.
+ * Name class demonstrating naming conventions exercise.
  *
- * This class keeps only the implementations that follow
- * best practices for readability and maintainability.
+ * This class follows the required A/B selection rules
+ * from the Holberton Clean Code naming conventions task.
  */
+
 import java.util.Date;
-import java.util.List;
 import java.net.URL;
 
+/**
+ * Name class.
+ */
 public class Name {
 
     /**
@@ -16,27 +19,22 @@ public class Name {
     public Date modifiedDate;
 
     /**
-     * List of all test cases associated with a user.
+     * Find all test cases by user.
      *
-     * @param user the user whose test cases are retrieved
+     * @param user the user
      * @return list of test cases
      */
-    public List<Testcase> findAllTestcasesByUser(User user) {
+    public Testcase[] findAllTestcasesByUser(User user) {
         return null;
     }
 
     /**
-     * List of all accounts.
+     * Correct declaration using required naming convention.
      */
-    public List<Account> accountList;
+    public Account[] AccountList;
 
     /**
-     * Array of accounts.
-     */
-    public Account[] accountsList;
-
-    /**
-     * Deletes a user from the system.
+     * Deletes a user.
      *
      * @param user the user to delete
      */
@@ -44,30 +42,30 @@ public class Name {
     }
 
     /**
-     * Properly named URL reference.
+     * URL reference.
      */
     public URL url;
 
     /**
-     * Represents a table entity in the system.
+     * Table representer class.
      */
     public class TableRepresenter {
     }
 
     /**
-     * Saves a car entity.
+     * Saves a car.
      */
     public void saveCar() {
     }
 
     /**
-     * Saves a user entity.
+     * Saves a user.
      */
     public void saveUser() {
     }
 
     /**
-     * Creates a new account.
+     * Creates an account.
      */
     public void createAccount() {
     }
@@ -89,19 +87,19 @@ public class Name {
     public final int HOURS_IN_WEEK = 168;
 
     /**
-     * User class placeholder representing system users.
+     * User class placeholder.
      */
     public static class User {
     }
 
     /**
-     * Account class placeholder representing accounts.
+     * Account class placeholder.
      */
     public static class Account {
     }
 
     /**
-     * Testcase class placeholder representing test cases.
+     * Testcase class placeholder.
      */
     public static class Testcase {
     }

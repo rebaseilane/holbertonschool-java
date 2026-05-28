@@ -1,0 +1,21 @@
+Hexagonal Architecture (also known as Ports and Adapters Architecture) is a software design pattern created by Alistair Cockburn. It was introduced to improve how applications handle dependencies and external systems while keeping the core business logic independent and isolated.
+
+The main idea of Hexagonal Architecture is to structure an application in a way that the core domain logic is placed at the centre of the system, while all external components such as databases, user interfaces, APIs, and third-party services interact with it through clearly defined interfaces called ports. The implementations of these interfaces are called adapters.
+
+One of the main benefits of Hexagonal Architecture is that it promotes strong separation of concerns. The business logic is completely independent from infrastructure concerns such as frameworks, databases, or external APIs. This makes the system easier to test because the core logic can be tested without relying on external systems. It also improves maintainability since changes in external technologies do not affect the core application. Another benefit is flexibility, as different adapters can be swapped without modifying the core logic.
+
+Key features of Hexagonal Architecture include:
+- A central domain model that contains business rules
+- Ports that define how the core interacts with the outside world
+- Adapters that implement these ports for external systems
+- A clear separation between inside (core logic) and outside (external systems)
+
+Clean Architecture, introduced by Robert C. Martin (Uncle Bob), shares similar principles with Hexagonal Architecture but has some differences in structure and emphasis. While Hexagonal Architecture focuses on the concept of ports and adapters around a central domain, Clean Architecture organizes the system into concentric layers, such as entities, use cases, interface adapters, and frameworks. Both architectures enforce dependency inversion, meaning that outer layers depend on inner layers, but not the other way around.
+
+The main difference is that Hexagonal Architecture is more focused on communication boundaries (how the system interacts with external systems), while Clean Architecture is more structured around layered responsibilities and use cases.
+
+In my opinion, Hexagonal Architecture can be used in many types of projects, especially medium to large systems where maintainability, testability, and flexibility are important. However, it may not be necessary for very small or simple applications, as it can introduce additional complexity.
+
+Before using Hexagonal Architecture, developers should consider the size of the project, expected future growth, team experience, and the number of external integrations. If the system is expected to evolve, integrate with multiple services, or require strong testing capabilities, then Hexagonal Architecture becomes a strong choice. However, for simple CRUD applications or prototypes, a simpler architecture may be more appropriate.
+
+Overall, Hexagonal Architecture provides a powerful way to build scalable and maintainable systems by clearly separating business logic from external concerns.
